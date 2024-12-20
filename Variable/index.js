@@ -13,7 +13,7 @@
 // const age = 20;
 // console.log(age);
 
-prompt("Nhập tên của bạn vào: ");
-var MyName = "Trần Như Nhộng";
+// Gán giá trị nhập của ô nhập liệu vào biến
+let MyName = prompt("Nhập tên của bạn vào: ");
 console.log(MyName);
-console.log("Chao mung " + MyName);
+console.log("Chào mừng " + MyName);
