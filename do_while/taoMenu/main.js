@@ -1,8 +1,5 @@
 let n = prompt("Nhập số n vào: ");
-console.log("1. Tính tổng hai số");
-console.log("2. Tính hiệu hai số");
-console.log("3. Tính tích hai số");
-console.log("4. Thoất");
+
 do {
   if (n === "1") {
     let a = Number(prompt("Nhập số a: "));
@@ -13,14 +10,17 @@ do {
   } else if (n === "2") {
     let a = Number(prompt("Nhập số a: "));
     let b = Number(prompt("Nhập số b: "));
-    let hieu = a + b;
-    console.log(`Hiệu ${a} + ${b} = ${hieu}`);
+    let hieu = a - b;
+    console.log(`Hiệu ${a} - ${b} = ${hieu}`);
     break;
   } else if (n === "3") {
     let a = Number(prompt("Nhập số a: "));
     let b = Number(prompt("Nhập số b: "));
-    let tich = a + b;
-    console.log(`Tích ${a} + ${b} = ${tich}`);
+    let tich = a * b;
+    console.log(`Tích ${a} * ${b} = ${tich}`);
+    break;
+  } else {
+    console.log("Thoát khỏi chương trình");
     break;
   }
-} while (n !== "4");
+} while (n !== "1" || n !== "2" || n !== "3" || n !== "4");

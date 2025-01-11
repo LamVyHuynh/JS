@@ -1,5 +1,5 @@
 let n = prompt("Nhập số n vào: ");
-while (n !== "4") {
+while (n !== "1" || n !== "2" || n !== "3" || n !== "4") {
   if (n === "1") {
     let a = Number(prompt("Nhập số a vào: "));
     let b = Number(prompt("Nhập số b vào: "));
@@ -17,6 +17,9 @@ while (n !== "4") {
     let b = Number(prompt("Nhập số b vào: "));
     let tich = a * b;
     console.log("%s * %s = %s", a, b, tich);
+    break;
+  } else {
+    console.log("Thoát khỏi chương trình");
     break;
   }
 }
