@@ -20,4 +20,13 @@ while (true) {
   } else {
     alert(a + " không phải số nguyên tố", a);
   }
+  // b5: Hoi nguoi dung co muon tiep tuc khong?
+  let answer = prompt(
+    `Bạn có muốn tiêp tục không? 
+     Nhập no nếu bạn không muốn tiếp tục.
+     còn tiếp tục thì bấm bất kỳ phím nào `
+  );
+  if (answer.toLowerCase() === "no") {
+    break;
+  }
 }
